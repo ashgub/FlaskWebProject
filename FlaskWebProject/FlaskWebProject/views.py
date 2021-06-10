@@ -32,9 +32,22 @@ def about():
     return render_template(
         'about.html',
         title='About',
-        year=datetime.now().year,
-        message='Your application description page.'
+        year=datetime.now().time(),
+        message='Your application description page.',
+        test = "yeah"
+
     )
+
+@app.route('/testpage')
+def testpage():
+    return render_template(
+        'testpage.html',
+        title='test page',
+        year=datetime.now().year,
+        message ='welcome to the test page',
+        )
+
+
 
 # If you add a Web page you start with a decorator 
 # Then define a function

@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- The title is provided by the code so when the page is rendered the title will be replaced with whatever the title is  -->
-    <title>{{ title }} - My Flask Application</title>
+    <title>{{ title }} - yeah pretty much mate</title>
     <!-- Cascading Sytle Sheets allow formatting to be applied across the whole site without lots of editing -->
     <link rel="stylesheet" type="text/css" href="/static/content/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="/static/content/site.css" />
@@ -21,7 +21,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="/" class="navbar-brand">Application name</a>
+                <a href="/" class="navbar-brand">Ash</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -29,6 +29,7 @@
                     <li><a href="{{ url_for('home') }}">Home</a></li>
                     <li><a href="{{ url_for('about') }}">About</a></li>
                     <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                    <li><a href="{{ url_for('testpage') }}">testpage</a></li>
                 </ul>
             </div>
         </div>
